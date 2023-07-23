@@ -1,0 +1,14 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+%btn {
+  padding: 11px 20px;
+  border-radius: $radiusBtn;
+}
+%btn--primary {
+  background: $primary;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+}
