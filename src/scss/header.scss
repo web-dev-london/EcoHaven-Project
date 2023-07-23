@@ -106,6 +106,13 @@
   &__link {
     color: $white;
     padding: 10px 16px;
+    transition: all 4ms ease-in 0s;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      text-shadow: 1px 0px 1.6px #cecece;
+    }
   }
 
   // .navbar__action
@@ -140,6 +147,16 @@
     color: $white;
     @extend %btn;
     @extend %btn--primary;
+    transition: all 0.4s ease-in-out 0s;
+    &:hover {
+      background-color: darken(
+        $color: $primary,
+        $amount: 8
+      );
+    }
+    &:active {
+      box-shadow: 0px 0px 6px 2px $primary;
+    }
   }
 
   // .navbar__icon-menu
@@ -233,7 +250,6 @@
 
   &__select-wrapper {
     cursor: pointer;
-    text-align: center;
     padding-inline: rem(15);
     background-color: $neutralLighter;
     color: $textColor;
@@ -243,7 +259,6 @@
     position: relative;
 
     &::before {
-      cursor: pointer;
       position: absolute;
       font-family: 'Font Awesome 6 Free';
       font-weight: 900;

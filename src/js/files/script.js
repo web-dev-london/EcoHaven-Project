@@ -176,12 +176,6 @@ function setUpCarousel(carousel) {
   const numSlides = carouselContent.children.length;
 
   function handleNext() {
-    // sliderPosition = modulo(
-    //   sliderPosition + 1,
-    //   numSlides,
-    // );
-
-    // sliderContent.style.transform = `translateX(-${sliderPosition}00%)`;
     sliderPosition++;
     carousel.style.setProperty(
       '--current-slide',
@@ -192,11 +186,6 @@ function setUpCarousel(carousel) {
   }
 
   function handlePrev() {
-    // sliderPosition = modulo(
-    //   sliderPosition - 1,
-    //   numSlides,
-    // );
-    // carousel.style.transform = `translateX(-${sliderPosition}00%)`;
     sliderPosition--;
     carousel.style.setProperty(
       '--current-slide',
@@ -204,14 +193,6 @@ function setUpCarousel(carousel) {
     );
     sliderEnd();
   }
-
-  // function modulo(number, mod) {
-  //   let result = number % mod;
-  //   if (result < 0) {
-  //     result += mod;
-  //   }
-  //   return result;
-  // }
 
   function sliderEnd() {
     if (sliderPosition >= numSlides - 1) {
