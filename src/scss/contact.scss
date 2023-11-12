@@ -93,6 +93,10 @@
     @extend %btn;
     @extend %btn--primary;
     color: $white;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(0.95);
+    }
   }
 
   // .contact__details-header
@@ -179,7 +183,7 @@
 .contact__textarea {
   padding: rem(20) rem(15);
   border-radius: $radiusLucky;
-  outline: none;
+  // outline: none;
   border: none;
   background-color: $inputColor;
 }

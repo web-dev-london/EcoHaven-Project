@@ -70,6 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   // .footer__btn
@@ -78,6 +79,14 @@
     @extend %btn;
     background-color: $secondary;
     color: $black;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(0.95);
+      background-color: darken(
+        $color: $secondary,
+        $amount: 15
+      );
+    }
   }
 
   // .footer__column2-title

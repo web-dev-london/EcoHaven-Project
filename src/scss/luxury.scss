@@ -84,11 +84,19 @@
     align-items: center;
     column-gap: rem(10);
     color: $white;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(0.95);
+      .luxury__icon {
+        transform: translateX(0.3rem);
+      }
+    }
   }
 
   &__icon {
     width: rem(13);
     height: rem(11);
+    transition: all 0.4s;
     cursor: pointer;
   }
   // .luxury__box-img

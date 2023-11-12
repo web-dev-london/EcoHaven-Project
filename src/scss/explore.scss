@@ -129,6 +129,10 @@
     @extend %btn;
     padding: rem(4) rem(12.5);
     color: $white;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(0.95);
+    }
   }
 
   // .explore__head-description
@@ -271,9 +275,17 @@
     @extend %btn;
     @extend %btn--primary;
     color: $white;
+    transition: all 0.4s;
     & > svg {
       width: 13px;
       height: 11px;
+      transition: all 0.4s;
+    }
+    &:hover {
+      transform: scale(0.95);
+      & > svg {
+        transform: translateX(0.3rem);
+      }
     }
   }
   // .explore__btn2

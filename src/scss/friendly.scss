@@ -75,12 +75,20 @@
     font-weight: 600;
     line-height: 142.857143%; /* 20/14 */
     color: $white;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(0.95);
+      .friendly__icon {
+        transform: translateX(0.3rem);
+      }
+    }
   }
 
   // .friendly__icon
 
   &__icon {
-    width: rem(14);
-    height: rem(14);
+    width: rem(12.5);
+    height: rem(10.5);
+    transition: all 0.4s;
   }
 }

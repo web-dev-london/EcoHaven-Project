@@ -139,6 +139,10 @@
     border: 1.5px solid $white;
     color: $white;
     @extend %btn;
+    transition: all 0.4s;
+    &:hover {
+      transform: scale(0.95);
+    }
   }
 
   // .navbar__btn2
@@ -147,8 +151,9 @@
     color: $white;
     @extend %btn;
     @extend %btn--primary;
-    transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s;
     &:hover {
+      transform: scale(0.95);
       background-color: darken(
         $color: $primary,
         $amount: 8
